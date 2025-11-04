@@ -21,7 +21,7 @@ long Person :: getId() const {
 
 
 
-class Student : public Person { // Student class 만들기. Person이 부모 클래스, Student가 자식 클래스가 됨.
+class Student : public Person { // Student class 만들기. Person이 부모(슈퍼) 클래스, Student가 자식(파생) 클래스가 됨. // 만약 public이 아닌 private로 상속받는다면 {} 내에서만 Person 사용 가능, main에서 못 씀!
     private:
         double gpa;
     public:
@@ -44,7 +44,7 @@ int main() {
     cout << psn.getId() << endl << endl;
     
     Student std;
-    std.setId(1111L); // Person을 상속받았기 때문에 Id, GPA, ... 를 모두 가지고 있어 setId를 호출할 수 있음음.
+    std.setId(1111L); // Person을 상속받았기 때문에 Id, GPA, ... 를 모두 가지고 있어 setId를 호출할 수 있음.
     std.setGPA(3.9);
     cout << std.getId() << endl;
     cout << std.getGPA() << endl;
