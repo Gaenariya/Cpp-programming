@@ -1,0 +1,5 @@
+Kim Minjae,1001,3.8,AI Robotics
+Park Seoyeon,1002,3.6,Data Mining
+Jung Jaehoon,1003,3.9,Quantum Computing
+Oh Siyoon,1004,4,Bioinformatics
+Hwang Doyoon,1005,4.2,Cybersecurity

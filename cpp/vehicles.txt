@@ -1,0 +1,10 @@
+Car,Hyundai,180,4
+Car,Kia,170,4
+Car,Chevrolet,160,2
+Car,SsangYong,150,4
+Car,Renault,140,2
+Bike,Samchuly,25,1
+Bike,Alton,30,0
+Bike,Honda,50,1
+Bike,Yamaha,60,0
+Bike,Suzuki,55,1

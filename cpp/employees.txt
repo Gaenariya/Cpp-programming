@@ -1,0 +1,10 @@
+Manager,Kim Minjae,101,6000,5
+Manager,Park Seoyeon,102,6500,6
+Manager,Jung Jaehoon,103,6200,4
+Manager,Oh Siyoon,104,7000,7
+Manager,Hwang Doyoon,105,6800,5
+Engineer,Lee Harin,201,5000,AI
+Engineer,Choi Minho,202,4800,Web
+Engineer,Han Jiwoo,203,5200,Mobile
+Engineer,Song Daeun,204,5100,Embedded
+Engineer,Yoo Seunghyun,205,5300,Database
