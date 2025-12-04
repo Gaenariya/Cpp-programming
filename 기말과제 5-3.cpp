@@ -7,7 +7,7 @@
 using namespace std;
 
 
-// 1. Employee Å¬·¡½º
+// 1. Employee í´ë˜ìŠ¤
 
 class Employee
 {
@@ -28,7 +28,7 @@ class Employee
         int getSalary() const;
 };
 
-// --------- Employee ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Employee í•¨ìˆ˜ ì •ì˜ ----------
 
 Employee::Employee() 
 {
@@ -66,7 +66,7 @@ int Employee::getSalary() const
 
 
 
-// 2. Manager Å¬·¡½º
+// 2. Manager í´ë˜ìŠ¤
 
 class Manager : public Employee
 {
@@ -81,7 +81,7 @@ class Manager : public Employee
         int getTeamSize() const;
 };
 
-// --------- Manager ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Manager í•¨ìˆ˜ ì •ì˜ ----------
 
 Manager::Manager() 
 {
@@ -111,7 +111,7 @@ int Manager::getTeamSize() const
 
 
 
-// 3. Engineer Å¬·¡½º
+// 3. Engineer í´ë˜ìŠ¤
 
 class Engineer : public Employee
 {
@@ -126,7 +126,7 @@ class Engineer : public Employee
         string getSpecialty() const;
 };
 
-// --------- Engineer ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Engineer í•¨ìˆ˜ ì •ì˜ ----------
 
 Engineer::Engineer() 
 {
@@ -156,7 +156,7 @@ string Engineer::getSpecialty() const
 
 
 
-// 4. main ÇÔ¼ö
+// 4. main í•¨ìˆ˜
 
 int main() 
 {
@@ -164,7 +164,7 @@ int main()
     vector<Engineer> engineers;
 
     
-    // 5°³ÀÇ Manager °´Ã¼ »ı¼º
+    // 5ê°œì˜ Manager ê°ì²´ ìƒì„±
     
     managers.push_back(Manager("Kim Minjae", 101, 6000, 5));
     managers.push_back(Manager("Park Seoyeon", 102, 6500, 6));
@@ -173,7 +173,7 @@ int main()
     managers.push_back(Manager("Hwang Doyoon", 105, 6800, 5));
 
     
-    // 5°³ÀÇ Engineer °´Ã¼ »ı¼º
+    // 5ê°œì˜ Engineer ê°ì²´ ìƒì„±
     
     engineers.push_back(Engineer("Lee Harin", 201, 5000, "AI"));
     engineers.push_back(Engineer("Choi Minho", 202, 4800, "Web"));
@@ -182,7 +182,7 @@ int main()
     engineers.push_back(Engineer("Yoo Seunghyun", 205, 5300, "Database"));
 
     
-    // ÆÄÀÏ¿¡ ÀúÀå
+    // íŒŒì¼ì— ì €ì¥
     
     ofstream outFile("employees.txt");
 
@@ -200,7 +200,7 @@ int main()
 
 
     
-    // ÆÄÀÏ¿¡¼­ ÀĞ¾î¼­ °´Ã¼ »ı¼º + work() Ãâ·Â
+    // íŒŒì¼ì—ì„œ ì½ì–´ì„œ ê°ì²´ ìƒì„± + work() ì¶œë ¥
     
     cout << "\n===== Work Info from File =====\n";
 
