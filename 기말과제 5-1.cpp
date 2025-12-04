@@ -6,7 +6,7 @@
 using namespace std;
 
 
-// 1. Student Å¬·¡½º
+// 1. Student í´ë˜ìŠ¤
 
 class Student
 {
@@ -30,7 +30,7 @@ class Student
         double getGPA() const;
 };
 
-// --------- Student ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Student í•¨ìˆ˜ ì •ì˜ ----------
 
 Student::Student() 
 {
@@ -75,7 +75,7 @@ double Student::getGPA() const
 
 
 
-// 2. GraduateStudent (Student »ó¼Ó)
+// 2. GraduateStudent (Student ìƒì†)
 
 class GraduateStudent : public Student
 {
@@ -93,7 +93,7 @@ class GraduateStudent : public Student
         string getResearchTopic() const;
 };
 
-// --------- GraduateStudent ÇÔ¼ö Á¤ÀÇ ----------
+// --------- GraduateStudent í•¨ìˆ˜ ì •ì˜ ----------
 
 GraduateStudent::GraduateStudent() : Student() 
 {
@@ -124,14 +124,14 @@ string GraduateStudent::getResearchTopic() const
 
 
 
-// 3. main ÇÔ¼ö
+// 3. main í•¨ìˆ˜
 
 int main() 
 {
     vector<GraduateStudent> gradList;
 
     
-    // 5°³ÀÇ GraduateStudent °´Ã¼ »ı¼º
+    // 5ê°œì˜ GraduateStudent ê°ì²´ ìƒì„±
     
     gradList.push_back(GraduateStudent("Kim Minjae", 1001, 3.8, "AI Robotics"));
     gradList.push_back(GraduateStudent("Park Seoyeon", 1002, 3.6, "Data Mining"));
@@ -140,7 +140,7 @@ int main()
     gradList.push_back(GraduateStudent("Hwang Doyoon", 1005, 4.2, "Cybersecurity"));
 
     
-    // µ¥ÀÌÅÍ ÆÄÀÏ¿¡ ÀúÀå
+    // ë°ì´í„° íŒŒì¼ì— ì €ì¥
     
     ofstream outFile("students.txt");
 
@@ -161,7 +161,7 @@ int main()
     outFile.close();
 
     
-    // ÀúÀåµÈ µ¥ÀÌÅÍ ÀĞ¾î¼­ Ãâ·Â
+    // ì €ì¥ëœ ë°ì´í„° ì½ì–´ì„œ ì¶œë ¥
     
     cout << "\n===== File Output =====\n";
 
