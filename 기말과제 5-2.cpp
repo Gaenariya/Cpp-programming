@@ -6,7 +6,7 @@
 using namespace std;
 
 
-// 1. Vehicle Ãß»ó Å¬·¡½º
+// 1. Vehicle ì¶”ìƒ í´ë˜ìŠ¤
 
 class Vehicle
 {
@@ -20,13 +20,13 @@ class Vehicle
 
         void setSpeed(int s);
 
-        virtual void displayInfo() const = 0; // ¼ø¼ö °¡»ó ÇÔ¼ö
+        virtual void displayInfo() const = 0; // ìˆœìˆ˜ ê°€ìƒ í•¨ìˆ˜
 
         string getBrand() const;
         int getSpeed() const;
 };
 
-// --------- Vehicle ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Vehicle í•¨ìˆ˜ ì •ì˜ ----------
 
 Vehicle::Vehicle() 
 {
@@ -57,7 +57,7 @@ int Vehicle::getSpeed() const
 
 
 
-// 2. Car Å¬·¡½º (Vehicle »ó¼Ó)
+// 2. Car í´ë˜ìŠ¤ (Vehicle ìƒì†)
 
 class Car : public Vehicle
 {
@@ -73,7 +73,7 @@ class Car : public Vehicle
         int getDoors() const;
 };
 
-// --------- Car ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Car í•¨ìˆ˜ ì •ì˜ ----------
 
 Car::Car() : Vehicle() 
 {
@@ -99,7 +99,7 @@ int Car::getDoors() const
 
 
 
-// 3. Bike Å¬·¡½º (Vehicle »ó¼Ó)
+// 3. Bike í´ë˜ìŠ¤ (Vehicle ìƒì†)
 
 class Bike : public Vehicle
 {
@@ -115,7 +115,7 @@ class Bike : public Vehicle
         bool getHasCarrier() const;
 };
 
-// --------- Bike ÇÔ¼ö Á¤ÀÇ ----------
+// --------- Bike í•¨ìˆ˜ ì •ì˜ ----------
 
 Bike::Bike() : Vehicle() 
 {
@@ -141,7 +141,7 @@ bool Bike::getHasCarrier() const
 
 
 
-// 4. main ÇÔ¼ö
+// 4. main í•¨ìˆ˜
 
 int main() 
 {
@@ -149,7 +149,7 @@ int main()
     vector<Bike> bikeList;
 
     
-    // 5°³ÀÇ Car °´Ã¼ »ı¼º
+    // 5ê°œì˜ Car ê°ì²´ ìƒì„±
     
     carList.push_back(Car("Hyundai", 180, 4));
     carList.push_back(Car("Kia", 170, 4));
@@ -158,7 +158,7 @@ int main()
     carList.push_back(Car("Renault", 140, 2));
 
     
-    // 5°³ÀÇ Bike °´Ã¼ »ı¼º
+    // 5ê°œì˜ Bike ê°ì²´ ìƒì„±
     
     bikeList.push_back(Bike("Samchuly", 25, true));
     bikeList.push_back(Bike("Alton", 30, false));
@@ -167,7 +167,7 @@ int main()
     bikeList.push_back(Bike("Suzuki", 55, true));
 
     
-    // ÆÄÀÏ¿¡ ÀúÀå
+    // íŒŒì¼ì— ì €ì¥
     
     ofstream outFile("vehicles.txt");
 
@@ -190,7 +190,7 @@ int main()
     outFile.close();
 
     
-    // ÀúÀåµÈ µ¥ÀÌÅÍ ÀĞ¾î¼­ Ãâ·Â
+    // ì €ì¥ëœ ë°ì´í„° ì½ì–´ì„œ ì¶œë ¥
     
     cout << "\n===== File Output =====\n";
 
